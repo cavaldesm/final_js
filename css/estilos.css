@@ -1,0 +1,355 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cuerpo*/
+
+body {
+    background-color: #ECEFD2;
+    font-family: "Ruda";
+    color: #000000;
+  }
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+/*Encabezado*/
+
+.header{
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+.header a{
+  float: left;
+  color: #ECEFD2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Ruda";
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo{
+  font-family: "Ruda";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a.logo{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover{
+  background-color: #9CD097;
+  color: black;
+}
+
+.header a.active{
+  background-color: #9CD097;
+  color: black;
+}
+
+.header-right{
+  float: right;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 500px) {
+  .header a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right{
+    float: none;
+  }
+}
+
+/*Imágenes*/
+
+.local-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+
+/*Contenedor texto*/
+
+.texto-container{
+    display: inline-block;
+}
+
+.texto-container h1{
+    font-size: 4vw;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.texto-container p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+/*Textos*/
+
+.textolocal1{
+  font-size: 3vw;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.textolocal{
+    font-size: 2vw;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.textolocal2{
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.textolocal3{
+  font-size: 1vw;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Botones*/
+
+.button-container1{
+  place-items: left;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.button-container2{
+  place-items: left;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.prev-btn,
+.next-btn,
+.random-btn{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.random-btn:hover {
+  font-style: italic;
+}
+
+/*Carrusel*/
+.images-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.imageSlides {
+    display: none
+  }
+   
+.carrusel{
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+   
+/*Botones del carrusel*/
+
+.slider-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #9CD097;
+    border-radius: 50%;
+  }
+
+/*Posición de los botones*/
+  .previous {
+    left: 2%;
+  }
+
+  .next {
+    right: 2%;
+  }
+
+  /*Cuando el usuario pase el cursor*/
+  .previous:hover,
+  .next:hover {
+    color: #ECEFD2;
+    background-color: #9CD097;
+  }
+
+/*Localstorage*/
+
+#usuariorecomienda {
+  font-family: "Ruda";
+  font-size: 15px;
+  font-weight: lighter;
+  width: 900px;
+  margin-left: 10px;
+}
+
+.sug-btn{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 40px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.sug-btn:hover{
+  font-style: italic;
+}
+
+/*Probando librerías*/
+
+.third{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.third:hover{
+  font-style: italic;
+}
+
+.second{
+  background-color: #9CD097;
+  padding: 5px;
+  font-family: "Ruda";
+  font-size: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+/*Probando formularios*/
+
+.form{
+  background-color: black;
+  padding: 10px 10px 10px;
+}
+
+.footer{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: "Ruda";
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.submit{
+  background-color: #9CD097;
+  color: black;
+  padding: 10px 20px;
+  font-family: "Ruda";
+  font-size: 20px;
+  margin: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.footer{
+  color: #ECEFD2;
+}
+
+.field {
+  color: #ECEFD2;
+}
+
+.submit:hover{
+font-style: italic;
+  }
+
+.field{
+  font-size: 20px;
+}
+
+.first {
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Lato';
+  margin: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.first:hover {
+  background: orange;
+}
+
+.img-containercolaborador{
+display:grid;
+}
+
+.colaborador ul{
+text-align: center;
+margin-top: 50px;
+}
